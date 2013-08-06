@@ -14,6 +14,9 @@
   <!-- Loading Flat UI -->
   <link href="{{url_for('static', filename='css/flat-ui.css')}}" rel="stylesheet">
 
+  <!--Loading Billy.Css-->
+  <link href="{{url_for('static', filename='css/billy.css')}}" rel="stylesheet">
+
   <!-- Upload JS -->
   <script>
    function chooseFile() {
@@ -45,16 +48,15 @@
               <li><a href="{{url_for('logout')}}">LOGOUT</a></li>
             </ul>
               {% else %}
-
               <li><a href="{{url_for('register')}}">SIGNUP</a></li>
-              </ul> 
-              <ul class="nav">
+            </ul> 
+            <ul class="nav">
               <form class="nav-form" action="{{url_for('login')}}" method="POST">
                 <input class="span2" type="text" placeholder="Email" name="email">
                 <input class="span2" type="password" placeholder="Password" name="password">
                 <button type="submit" class="btn">Log In</button>
               </form>
-          </ul>
+            </ul>
             
               {% endif %}
             
