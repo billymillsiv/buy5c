@@ -43,31 +43,26 @@
             </ul>
             <ul class="nav pull-left">
               <li><a href="{{url_for('about')}}">ABOUT</a></li>
+              <li><a href="{{url_for('sell')}}">SELL</a></li>
             </ul>
-            <ul class="nav pull-left">
-              {% if email %}
+          {% if email %}
+            <ul class = "nav pull-left">
               <li><a href="{{url_for('account')}}">ACCOUNT</a></li>
+            </ul>
+            <ul class = "nav pull-right">
               <li><a href="{{url_for('logout')}}">LOGOUT</a></li>
             </ul>
-              {% else %}
+
+          {% else %}
+            <ul class = "nav pull-left">
               <li><a href="{{url_for('register')}}">SIGNUP</a></li>
-              <!--Login Dropdown-->
-              <!--Change This HREF?-->
-              <li class = "dropdown">
-                <a class = "dropdown-toggle" data-toggle = "dropdown" href="#">LOGIN</a>
-                    <div class = "dropdown-menu">
-                        <!-- Login form here -->
-                        <form> <input id ="Login" type = "text" placeholder = "School Email" ></form>
-                        <form> <input id = "Login" type = "password" placeholder = "Password"></form>
-                    </div>
-              </li>
             </ul> 
             
             
               {% endif %}
            
             <ul class="nav pull-right">
-              <li><a href="{{url_for('sell')}}">SELL</a></li>
+              
               <!--Change this HREF-->
               <li><a href="{{url_for('sell')}}">SEARCH</a></li>
 
