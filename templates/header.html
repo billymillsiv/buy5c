@@ -25,7 +25,9 @@
    function createListing() {
       document.getElementById("createListing").click();
    }
-</script>
+  </script>
+  
+
 
 </head>
 
@@ -49,21 +51,27 @@
             </ul>
               {% else %}
               <li><a href="{{url_for('register')}}">SIGNUP</a></li>
+              <!--Login Dropdown-->
+              <!--Change This HREF?-->
+              <li class = "dropdown">
+                <a class = "dropdown-toggle" data-toggle = "dropdown" href="#">LOGIN</a>
+                    <div class = "dropdown-menu">
+                        <!-- Login form here -->
+                        <form> <input id ="Login" type = "text" placeholder = "School Email" ></form>
+                        <form> <input id = "Login" type = "password" placeholder = "Password"></form>
+                    </div>
+              </li>
             </ul> 
-            <ul class="nav">
-              <form class="nav-form" action="{{url_for('login')}}" method="POST">
-                <input class="span2" type="text" placeholder="Email" name="email">
-                <input class="span2" type="password" placeholder="Password" name="password">
-                <button type="submit" class="btn">Log In</button>
-              </form>
-            </ul>
+            
             
               {% endif %}
-            
+           
             <ul class="nav pull-right">
               <li><a href="{{url_for('sell')}}">SELL</a></li>
+              <!--Change this HREF-->
+              <li><a href="{{url_for('sell')}}">SEARCH</a></li>
 
-              <li><form class="navbar-search pull-right" action="{{url_for('search')}}" method="POST">
+              <li><form id = "main-search" class="navbar-search pull-right" action="{{url_for('search')}}" method="POST">
                     <input type="text" name="terms" class="search-query" placeholder="Search">
               </form></li>
             </ul> 
@@ -85,6 +93,7 @@
 
   <script type="text/javascript" src="{{url_for('static', filename='js/jquery-2.0.3.min.js')}}"></script>
     <script type="text/javascript" src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+
   </body>
 </html>
 
