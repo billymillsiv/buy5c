@@ -1,3 +1,22 @@
-#main-search {
-	display:none;
+/*Login Form*/
+
+#login-form {
+	margin-top:20px;
+}
+#login-form form {
+	margin:0;
+}
+#login-form form button {
+	margin:0;
+	margin-left:10px;
+	color:#fdfdfa;
+	background-color:#3498db;;
+}
+#login-form form button:hover,
+#login-form form button:focus {
+	color:#ffd34e;
+}
+#login-form form input {
+	margin:0;
+	height:18px;
 }
