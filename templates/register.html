@@ -3,22 +3,37 @@
 
 {% block content %}
 <html>
-    <head>
-        <title>buy5c - register</title>
-    </head>
-    <body>
-        <div class="container">
-        <div>
-            <h1>register</h1>
-            <form action="{{ url_for('register') }}" method="POST"
-                    class="search-box">
-                     <input type="text" size="20" placeholder="Email" name="email">
-                     <input type="password" size="20" placeholder="Password" name="password">
-                     <input type="submit" value="Create Account" class="btn btn-large btn-block btn-primary btn-create">
-            </form>
-            
+<head>
+   <title>buy5c - register</title>
+</head>
+<body>
+    <div class="container">
+        <div class="span12">
+            <div class="row">
+                <div class = "register-form">
+                    <h1>register</h1>
+                    <form action="{{ url_for('login') }}" method="POST" class="search-box">
+                        <fieldset>
+                            <div class="clearfix">
+                                <input type="text" placeholder="Your school email" name="email">
+                            </div>
+                            <div class="clearfix">
+                                <input type="text" placeholder="Your username" name="username">
+                            </div>
+                            <div class="clearfix">
+                                <input type="password" placeholder="Your password" name="password">
+                            </div>
+                            <div class="clearfix">
+                                <input type="password" placeholder="Confirm password" name="confirm_password">
+                            </div>
+                            <button class="btn primary" type="submit">register</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
         </div>
-        </div>
-    </body>
+    </div>
+</body>
 </html>
+
 {% endblock %}

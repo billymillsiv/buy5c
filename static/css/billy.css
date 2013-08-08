@@ -1,3 +1,22 @@
+/*Search Form*/
+#main-search {
+	margin-left:20px;
+	margin-top:20px;
+}
+#main-search form input:focus,
+#main-search form input:hover{
+	padding:8px 5px;
+	width:200px;
+	height:15px;
+	border: 2px solid #ffd34e;
+}
+#main-search form {
+	margin:0;
+}
+#main-search form input {
+	width:200px;
+	height:15px;
+}
 /*Login Form Page*/
 .login-form {
 	margin-top:0;
@@ -42,22 +61,30 @@
 .login-form:before{
 	border-color: transparent #6e6e63 transparent transparent;
 }
-/*Search Form*/
-#main-search {
-	margin-left:20px;
-	margin-top:20px;
+/*Register*/
+.register-form {
+	height:310px;
+	width:235px;
 }
-#main-search form input:focus,
-#main-search form input:hover{
-	padding:8px 5px;
-	width:200px;
-	height:15px;
-	border: 2px solid #ffd34e;
+.register-form form input {
+	width:215px;
 }
-#main-search form {
-	margin:0;
+.register-form form input:hover,
+.register-form form input:active,
+.register-form form input:focus {
+	border:2px solid #3498db;
 }
-#main-search form input {
-	width:200px;
-	height:15px;
+.register-form button {
+	float:right;
+	color:#fff;
+	background-color:#cacfd2;
 }
+.register-form button:hover,
+.register-form button:active,
+.register-form button:focus {
+	background-color:#3498db;
+}
+.register-form h1 {
+	margin-bottom:25px;
+}
+
