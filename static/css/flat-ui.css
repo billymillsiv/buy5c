@@ -1328,7 +1328,7 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
 .uneditable-input:focus {
-  border-color: #FFD34E;
+  border-color: #F00
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -3572,7 +3572,7 @@ body.vjs-full-window {
   border-radius: 10px;
 }
 .login {
-  background: url(../images/login/imac.png) 0 0 no-repeat;
+  /*background: url(../images/login/imac.png) 0 0 no-repeat;*/
   background-size: 940px 778px;
   color: #ffffff;
   margin-bottom: 77px;

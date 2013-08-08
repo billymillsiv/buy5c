@@ -1,22 +1,63 @@
-/*Login Form*/
-
-#login-form {
+/*Login Form Page*/
+.login-form {
+	margin-top:0;
+	background-color:#6e6e63;
+	padding-left:6px;
+	padding-top:6px;
+	height:273px;
+	width:194px;
+}
+.login-form form {
+	margin-left:0;
+}
+.login-form form input {
+	width:100%;
+	border:2px solid #6e6e63;
+	margin-left:-2px;
+	margin-bottom:14px;
+}
+.login-form input:hover,
+.login-form input:focus,
+.login-form input:active {
+	border:2px solid #ffd34e;
+}
+.login-form a {
+	color:#fff;
+	font-size:13px;
+}
+.login-form a:hover,
+.login-form a:active {
+	text-decoration:underline;
+}
+.login-form h1 {
+	color:#b0b09f;
+	margin-bottom:25px;
+}
+.login-form button {
+	background-color:#ffd34e;
+	color:#6e6e63;
+	margin-right:-11px;
+	float:right;
+}
+.login-form:before{
+	border-color: transparent #6e6e63 transparent transparent;
+}
+/*Search Form*/
+#main-search {
+	margin-left:20px;
 	margin-top:20px;
 }
-#login-form form {
+#main-search form input:focus,
+#main-search form input:hover{
+	padding:8px 5px;
+	width:200px;
+	height:15px;
+	border: 2px solid #ffd34e;
+}
+#main-search form {
 	margin:0;
 }
-#login-form form button {
-	margin:0;
-	margin-left:10px;
-	color:#fdfdfa;
-	background-color:#3498db;;
-}
-#login-form form button:hover,
-#login-form form button:focus {
-	color:#ffd34e;
-}
-#login-form form input {
-	margin:0;
-	height:18px;
+#main-search form input {
+	width:200px;
+	height:15px;
 }
